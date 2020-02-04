@@ -3,16 +3,14 @@ import pt from 'date-fns/locale/pt-BR';
 import Mail from '../../lib/Mail';
 
 class CancellationMail {
-  get Key() {
+  get key() {
     return 'CancellationMail';
   }
 
   async handle({ data }) {
     const { appointment } = data;
 
-    console.log('DONE!');
-
-    await Mail.sendMail({
+    await Mail.senndMail({
       to: `${appointment.provider.name} <${appointment.provider.email}>`,
       subject: 'Agendamento cancelado',
       template: 'cancellation',
