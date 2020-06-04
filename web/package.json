@@ -12,14 +12,18 @@
     "@types/react-dom": "^16.9.0",
     "@unform/core": "^2.1.0",
     "@unform/web": "^2.1.0",
+    "axios": "^0.19.2",
     "eslint-plugin-html": "^6.0.2",
     "polished": "^3.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
     "styled-components": "^5.1.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "uuidv4": "^6.1.0",
+    "yup": "^0.29.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,6 +49,7 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.5",
     "@types/styled-components": "^5.1.0",
+    "@types/yup": "^0.29.1",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^3.0.0-alpha.27",
     "eslint-config-airbnb": "^18.1.0",

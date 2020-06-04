@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import express, { Request, Response, NextFunction } from 'express';
+import cors from 'cors';
 import 'express-async-errors';
 
 import swaggerUi from 'swagger-ui-express';
@@ -13,6 +14,8 @@ import AppError from './errors/AppError';
 import './database';
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 
