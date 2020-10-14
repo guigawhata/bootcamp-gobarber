@@ -1,3 +1,5 @@
 node_modules
 tmp/*
 !tmp/.gitkeep
+.docker/postgres/data/*
+!.docker/postgres/data/.gitkeep

@@ -2,9 +2,9 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5432,
-  "username": "postgres",
-  "password": "06041991",
-  "database": "gobarber_v2",
+  "username": "devfloydbr",
+  "password": "devfloydbr",
+  "database": "gobarber",
   "entities": [
     "./src/models/*.ts"
   ],

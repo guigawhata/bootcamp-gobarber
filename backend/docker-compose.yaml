@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    container_name: gobarber_db
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: gobarber
+      POSTGRES_USER: devfloydbr
+      POSTGRES_PASSWORD: devfloydbr
+    volumes:
+      - ./.docker/postgres/data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
